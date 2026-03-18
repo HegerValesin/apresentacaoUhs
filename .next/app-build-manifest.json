@@ -1,0 +1,64 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/app/_not-found/page-3f9cc65476947432.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/css/dca162536e10cf84.css",
+      "static/chunks/app/layout-c0eb870182382883.js"
+    ],
+    "/analiseEncerramento/aluno/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/870fdd6f-eac6211ed7a138d6.js",
+      "static/chunks/820-f69ad03b1c883dae.js",
+      "static/chunks/app/analiseEncerramento/aluno/page-d9a3959151f188c0.js"
+    ],
+    "/analiseEncerramento/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/870fdd6f-eac6211ed7a138d6.js",
+      "static/chunks/820-f69ad03b1c883dae.js",
+      "static/chunks/app/analiseEncerramento/page-95fde58eb7f167ce.js"
+    ],
+    "/analiseEncerramento/professor/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/870fdd6f-eac6211ed7a138d6.js",
+      "static/chunks/820-f69ad03b1c883dae.js",
+      "static/chunks/app/analiseEncerramento/professor/page-b3f63508d09e3750.js"
+    ],
+    "/envioslistarecepcao/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/870fdd6f-eac6211ed7a138d6.js",
+      "static/chunks/820-f69ad03b1c883dae.js",
+      "static/chunks/app/envioslistarecepcao/page-e428b0696c6ab25f.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-68f22649503f8e75.js",
+      "static/chunks/4bd1b696-abd9c0910edfb8ff.js",
+      "static/chunks/684-0d14b84ab8ad2aa5.js",
+      "static/chunks/main-app-488d8435b65f731c.js",
+      "static/chunks/870fdd6f-eac6211ed7a138d6.js",
+      "static/chunks/820-f69ad03b1c883dae.js",
+      "static/chunks/app/page-b5234114582e857f.js"
+    ]
+  }
+}
