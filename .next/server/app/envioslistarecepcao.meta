@@ -1,7 +1,15 @@
 {
   "headers": {
-    "x-nextjs-stale-time": "4294967294",
+    "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
     "x-next-cache-tags": "_N_T_/layout,_N_T_/envioslistarecepcao/layout,_N_T_/envioslistarecepcao/page,_N_T_/envioslistarecepcao"
-  }
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/envioslistarecepcao/__PAGE__",
+    "/envioslistarecepcao",
+    "/_index",
+    "/_head"
+  ]
 }
