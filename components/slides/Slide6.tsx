@@ -225,6 +225,30 @@ export default function Slide6() {
           unidade.
         </p>
       </div>
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style={{
+          position: "absolute",
+          left: "120px",
+          top: "410px",
+          width: "470px",
+          height: "30px",
+          zIndex: "10",
+        }}
+        onClick={openCoordenadorAgenda}
+      >
+        <p
+          style={{
+            fontFamily: '"Open Sans", sans-serif',
+            fontSize: "10px",
+            color: "#1968f1",
+            lineHeight: "1.6",
+          }}
+        >
+          Clicar no card para visualizar processo detalhado.
+        </p>
+      </div>
       {/* ================= CARD 2: RECEPCIONISTA ================= */}
       {/* Card 2 Background */}
       <div
