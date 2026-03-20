@@ -4,6 +4,7 @@ import {
   faFolderOpen,
   faAddressCard,
   faUserGraduate,
+  faFileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const title = "Interface Principal do Sistema";
@@ -102,7 +103,7 @@ export default function Slide5() {
           trabalho.
         </p>
       </div>
-      {/* Pill 1 Background (Agendamentos) */}
+      {/* Pill 1 Background (Agendamento) */}
       <div
         data-object="true"
         data-object-type="shape"
@@ -162,10 +163,10 @@ export default function Slide5() {
             color: "#003087",
           }}
         >
-          Agendamentos
+          Agendamento
         </p>
       </div>
-      {/* Pill 2 Background (Arquivo Documentos) */}
+      {/* Pill 2 Background (Arquivo / Documentos) */}
       <div
         data-object="true"
         data-object-type="shape"
@@ -173,7 +174,7 @@ export default function Slide5() {
           position: "absolute",
           left: "300px",
           top: "210px",
-          width: "250px",
+          width: "240px",
           height: "44px",
           backgroundColor: "#ebf4ff",
           borderRadius: "22px",
@@ -237,9 +238,9 @@ export default function Slide5() {
         data-object-type="shape"
         style={{
           position: "absolute",
-          left: "570px",
+          left: "560px",
           top: "210px",
-          width: "160px",
+          width: "170px",
           height: "44px",
           backgroundColor: "#ebf4ff",
           borderRadius: "22px",
@@ -256,7 +257,7 @@ export default function Slide5() {
         data-object-type="icon"
         style={{
           position: "absolute",
-          left: "590px",
+          left: "580px",
           top: "222px",
           width: "24px",
           height: "24px",
@@ -277,9 +278,9 @@ export default function Slide5() {
         data-object-type="textbox"
         style={{
           position: "absolute",
-          left: "624px",
+          left: "614px",
           top: "222px",
-          width: "100px",
+          width: "110px",
           height: "24px",
           zIndex: "10",
           display: "flex",
@@ -304,9 +305,9 @@ export default function Slide5() {
         data-object-type="shape"
         style={{
           position: "absolute",
-          left: "790px",
+          left: "750px",
           top: "210px",
-          width: "290px",
+          width: "210px",
           height: "44px",
           backgroundColor: "#ebf4ff",
           borderRadius: "22px",
@@ -323,7 +324,7 @@ export default function Slide5() {
         data-object-type="icon"
         style={{
           position: "absolute",
-          left: "790px",
+          left: "770px",
           top: "222px",
           width: "24px",
           height: "24px",
@@ -344,9 +345,9 @@ export default function Slide5() {
         data-object-type="textbox"
         style={{
           position: "absolute",
-          left: "824px",
+          left: "804px",
           top: "222px",
-          width: "160px",
+          width: "150px",
           height: "24px",
           zIndex: "10",
           display: "flex",
@@ -362,7 +363,74 @@ export default function Slide5() {
             color: "#003087",
           }}
         >
-          Fisioterapia (CEF)
+          Fisioterapia
+        </p>
+      </div>
+      {/* Pill 5 Background (Relatórios) */}
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style={{
+          position: "absolute",
+          left: "980px",
+          top: "210px",
+          width: "210px",
+          height: "44px",
+          backgroundColor: "#ebf4ff",
+          borderRadius: "22px",
+          border: "1px solid #bee3f8",
+          zIndex: "1",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      ></div>
+      {/* Pill 5 Icon */}
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style={{
+          position: "absolute",
+          left: "1000px",
+          top: "222px",
+          width: "24px",
+          height: "24px",
+          zIndex: "10",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <FontAwesomeIcon
+          icon={faFileAlt}
+          style={{ fontSize: "20px", color: "#0057b8" }}
+        />
+      </div>
+      {/* Pill 5 Text */}
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style={{
+          position: "absolute",
+          left: "1034px",
+          top: "222px",
+          width: "150px",
+          height: "24px",
+          zIndex: "10",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <p
+          style={{
+            fontFamily: '"Montserrat", sans-serif',
+            fontSize: "16px",
+            fontWeight: "700",
+            color: "#003087",
+          }}
+        >
+          Relatórios
         </p>
       </div>
       {/* Hero Image Frame/Shadow Shape */}
@@ -387,7 +455,7 @@ export default function Slide5() {
         alt="Dashboard Principal Logado"
         data-object="true"
         data-object-type="image"
-        src="img/Logado.png"
+        src="img/Logado2.png"
         style={{
           position: "absolute",
           left: "90px",
@@ -421,7 +489,7 @@ export default function Slide5() {
             lineHeight: "1.6",
           }}
         >
-          Clicar na imagem para amplicar
+          Clicar na imagem para ampliar
         </p>
       </div>
       {/* Footer Textbox */}

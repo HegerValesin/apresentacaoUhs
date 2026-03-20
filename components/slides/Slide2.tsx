@@ -39,9 +39,9 @@ export default function Slide2() {
             <p
               style={{ fontFamily: '"Open Sans", sans-serif', fontSize: "24px", fontWeight: "400", color: "#4a5568", lineHeight: "1.5" }}
             >
-              O <strong>Unichristus Health System (UHS)</strong> é um sistema
+              O <strong>Universidade Christus Health System (UHS)</strong> é um sistema
               unificado projetado para atender todas as clínicas escola da
-              Universidade Unichristus, operando simultaneamente em dois pilares
+              Universidade Christus, operando simultaneamente em dois pilares
               fundamentais:
             </p>
           </div>
