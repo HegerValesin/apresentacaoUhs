@@ -1,6 +1,9 @@
 "use client";
 
-import { type MouseEvent, useEffect, useState } from "react";
+import { Suspense, type MouseEvent, useEffect, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   SLIDES,
   Slide1,
@@ -10,15 +13,7 @@ import {
   Slide5,
   Slide6,
   Slide7,
-  Slide8,
-  Slide9,
-  Slide10,
-  Slide11,
-  Slide12,
-  Slide13,
-  //Slide14,
-  Slide15,
-} from "@/components/slides";
+} from "@/components/coordenador";
 
 type SlideName = (typeof SLIDES)[number]["componentName"];
 
@@ -29,15 +24,7 @@ const SLIDE_COMPONENTS: Record<SlideName, React.ComponentType> = {
   Slide4,
   Slide5,
   Slide6,
-  Slide13,
   Slide7,
-  Slide8,
-  Slide9,
-  Slide10,
-  Slide11,
-  Slide12,
-  //Slide14,
-  Slide15,
 };
 
 function normalizeImageSrc(src: string) {
@@ -47,8 +34,12 @@ function normalizeImageSrc(src: string) {
   return `/${src}`;
 }
 
-export default function HomePage() {
+function HomePageContent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [modal, setModal] = useState<{ src: string; alt: string } | null>(null);
+  const rawReturnTo = searchParams.get("returnTo") || "/#slide11";
+  const returnTo = rawReturnTo.startsWith("#") ? `/${rawReturnTo}` : rawReturnTo;
 
   useEffect(() => {
     const onEsc = (event: KeyboardEvent) => {
@@ -107,6 +98,42 @@ export default function HomePage() {
           <img src={modal.src} alt={modal.alt} onClick={(e) => e.stopPropagation()} />
         </div>
       )}
+
+      <button
+        onClick={() => router.push(returnTo)}
+        style={{
+          position: "fixed",
+          bottom: "32px",
+          right: "32px",
+          display: "flex",
+          alignItems: "center",
+          gap: "10px",
+          padding: "14px 24px",
+          backgroundColor: "#003087",
+          color: "#ffffff",
+          border: "none",
+          borderRadius: "999px",
+          fontSize: "15px",
+          fontFamily: '"Montserrat", sans-serif',
+          fontWeight: "700",
+          cursor: "pointer",
+          boxShadow: "0 8px 24px rgba(0, 48, 135, 0.35)",
+          zIndex: 9999,
+          letterSpacing: "0.3px",
+        }}
+        aria-label="Voltar para a apresentação"
+      >
+        <FontAwesomeIcon icon={faArrowLeft} />
+        Voltar para Apresentação
+      </button>
     </main>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <Suspense fallback={null}>
+      <HomePageContent />
+    </Suspense>
   );
 }

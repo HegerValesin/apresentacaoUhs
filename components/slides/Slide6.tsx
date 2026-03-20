@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import {
   faCalendarDays,
   faChalkboardUser,
@@ -9,6 +10,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const title = "Perfis e Responsabilidades";
 
 export default function Slide6() {
+  const router = useRouter();
+
+  const openCoordenadorAgenda = () => {
+    const currentHash =
+      typeof window !== "undefined" && window.location.hash
+        ? window.location.hash
+        : "#slide6";
+    const returnTo = `/${currentHash}`;
+    router.push(`/coordenadorAgenda?returnTo=${encodeURIComponent(returnTo)}`);
+  };
+
   return (
     <div
       className="slide-container"
@@ -122,6 +134,7 @@ export default function Slide6() {
       <div
         data-object="true"
         data-object-type="shape"
+        onClick={openCoordenadorAgenda}
         style={{
           position: "absolute",
           left: "80px",
@@ -133,12 +146,14 @@ export default function Slide6() {
           boxShadow: "0 10px 30px rgba(0, 0, 0, 0.05)",
           borderLeft: "6px solid #0057b8",
           zIndex: "1",
+          cursor: "pointer",
         }}
       ></div>
       {/* Card 1 Icon */}
       <div
         data-object="true"
         data-object-type="icon"
+        onClick={openCoordenadorAgenda}
         style={{
           position: "absolute",
           left: "110px",
@@ -146,6 +161,7 @@ export default function Slide6() {
           width: "50px",
           height: "50px",
           zIndex: "10",
+          cursor: "pointer",
         }}
       >
         <FontAwesomeIcon
@@ -157,6 +173,7 @@ export default function Slide6() {
       <div
         data-object="true"
         data-object-type="textbox"
+        onClick={openCoordenadorAgenda}
         style={{
           position: "absolute",
           left: "180px",
@@ -166,6 +183,7 @@ export default function Slide6() {
           zIndex: "10",
           display: "flex",
           alignItems: "center",
+          cursor: "pointer",
         }}
       >
         <p
@@ -183,6 +201,7 @@ export default function Slide6() {
       <div
         data-object="true"
         data-object-type="textbox"
+        onClick={openCoordenadorAgenda}
         style={{
           position: "absolute",
           left: "110px",
@@ -190,6 +209,7 @@ export default function Slide6() {
           width: "480px",
           height: "100px",
           zIndex: "10",
+          cursor: "pointer",
         }}
       >
         <p

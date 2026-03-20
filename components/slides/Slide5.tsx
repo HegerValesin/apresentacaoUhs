@@ -3,6 +3,7 @@ import {
   faCalendarCheck,
   faFolderOpen,
   faAddressCard,
+  faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const title = "Interface Principal do Sistema";
@@ -295,6 +296,73 @@ export default function Slide5() {
           }}
         >
           Cadastros
+        </p>
+      </div>
+      {/* Pill 4 Background (Fisioterapia) */}
+      <div
+        data-object="true"
+        data-object-type="shape"
+        style={{
+          position: "absolute",
+          left: "790px",
+          top: "210px",
+          width: "290px",
+          height: "44px",
+          backgroundColor: "#ebf4ff",
+          borderRadius: "22px",
+          border: "1px solid #bee3f8",
+          zIndex: "1",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      ></div>
+      {/* Pill 4 Icon */}
+      <div
+        data-object="true"
+        data-object-type="icon"
+        style={{
+          position: "absolute",
+          left: "790px",
+          top: "222px",
+          width: "24px",
+          height: "24px",
+          zIndex: "10",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <FontAwesomeIcon
+          icon={faUserGraduate}
+          style={{ fontSize: "20px", color: "#0057b8" }}
+        />
+      </div>
+      {/* Pill 4 Text */}
+      <div
+        data-object="true"
+        data-object-type="textbox"
+        style={{
+          position: "absolute",
+          left: "824px",
+          top: "222px",
+          width: "160px",
+          height: "24px",
+          zIndex: "10",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <p
+          style={{
+            fontFamily: '"Montserrat", sans-serif',
+            fontSize: "16px",
+            fontWeight: "700",
+            color: "#003087",
+          }}
+        >
+          Fisioterapia (CEF)
         </p>
       </div>
       {/* Hero Image Frame/Shadow Shape */}

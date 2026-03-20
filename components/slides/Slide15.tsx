@@ -391,7 +391,7 @@ export default function Slide15() {
             textAlign: "center",
           }}
         >
-          LIT — Laboratório de Inovações Tecnológicas | Unichristus
+          LIT — Laboratório de Inovações Tecnológicas | Universiudade Christus
         </p>
       </div>
     </div>
